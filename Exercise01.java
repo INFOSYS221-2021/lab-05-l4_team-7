@@ -18,12 +18,12 @@ public class ExerciseOne {
         //take word
         //for each letter, append to new word, return new word
         String revWord = "";
-        for (int i = 0; i <= word.length() - 1 ;i++){
+        for (int i = 0; i < word.length();i++){
             revWord = revWord + word.charAt(word.length() - i - 1);   
         }
         return revWord;
     }
-}
+
     // Exercise Four
     private boolean isStringPalindrome(String word) {
         // Complete this method to deermine if the given word is a palindrome
