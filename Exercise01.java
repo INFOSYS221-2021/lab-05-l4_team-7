@@ -15,9 +15,15 @@ public class ExerciseOne {
     // Exercise One
     private String reverseString(String word) {
         // Complete this method to return the reveresed order of the given word
-        return "";
+        //take word
+        //for each letter, append to new word, return new word
+        String revWord = "";
+        for (int i = 0; i <= word.length() - 1 ;i++){
+            revWord = revWord + word.charAt(word.length() - i - 1);   
+        }
+        return revWord;
     }
-    
+}
     // Exercise Four
     private boolean isStringPalindrome(String word) {
         // Complete this method to deermine if the given word is a palindrome
