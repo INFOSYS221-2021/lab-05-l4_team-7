@@ -13,4 +13,4 @@ def fiboseq(index):
 
 index = 6
 print("The value at the "+str(index)+"th position in the Fibonacci sequence is "+str(fiboseq(index)))
-print("The value at the 6th postion in the Fibonacci sequence is 8")
+#print("The value at the 6th postion in the Fibonacci sequence is 8")
