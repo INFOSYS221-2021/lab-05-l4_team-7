@@ -2,9 +2,9 @@ public class ExerciseOne {
     public static void main(String args[]) {
       ExerciseOne ex01 = new ExerciseOne();
 
-      System.out.println(ex01.reverseString("hello world"));
-      System.out.println(ex01.reverseString("Dad"));
-      System.out.println(ex01.reverseString("Bsuiness School"));
+      //System.out.println(ex01.reverseString("hello world"));
+      //System.out.println(ex01.reverseString("Dad"));
+      //System.out.println(ex01.reverseString("Bsuiness School"));
       
       // Uncomment the following statements after finishing Exercise Four
        System.out.println(ex01.isStringPalindrome("hello world"));
@@ -28,11 +28,20 @@ public class ExerciseOne {
     // Exercise Four
     private boolean isStringPalindrome(String word) {
         // Complete this method to deermine if the given word is a palindrome
-        for (int i=0;i<word.length()/2;i++){
-            if (word.charAt(i) != word.charAt(word.length() - 1 - i)){
+        String revString = reverseString(word);
+        for (int i = 0; i<word.length();i++){
+            if (revString.charAt(i) != word.charAt(i)){
                 return false;
             }
         }
         return true;
-    }
+            
+        }
+        //}
+        //if (reverseString(word) == word){
+         //   return true;
+        //} else{
+        //    return false;
+        
+    
 }
