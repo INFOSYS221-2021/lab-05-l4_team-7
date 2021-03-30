@@ -30,18 +30,19 @@ public class ExerciseOne {
         // Complete this method to deermine if the given word is a palindrome
         String revString = reverseString(word);
         for (int i = 0; i<word.length();i++){
-            if (revString.charAt(i) != word.charAt(i)){
+           if (revString.charAt(i) != word.charAt(i)){
                 return false;
             }
         }
         return true;
             
-        }
+       }
         //}
-        //if (reverseString(word) == word){
-         //   return true;
-        //} else{
-        //    return false;
-        
+        if (reverseString(word).equalsIgnoreCase(word)){
+           return true;
+        } else{
+            return false;
+        }
+    }
     
 }
